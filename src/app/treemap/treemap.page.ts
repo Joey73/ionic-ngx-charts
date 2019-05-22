@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { single } from '../../assets/data/dataForBarChart';
+import { single } from '../../assets/data/data';
 
 @Component({
   selector: 'app-treemap',

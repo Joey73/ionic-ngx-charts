@@ -9,5 +9,11 @@
 
 <ion-content>
   <ion-card class="chart-card">
+    <ngx-charts-advanced-pie-chart
+      [scheme]="colorScheme"
+      [results]="single"
+      [gradient]="gradient"
+      (select)="onSelect($event)">
+    </ngx-charts-advanced-pie-chart>    
   </ion-card>
 </ion-content>

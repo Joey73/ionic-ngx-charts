@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {single, multi} from '../../assets/data/dataForBarChart';
+import {single, multi} from '../../assets/data/data';
 
 @Component({
   selector: 'app-pie-chart',
