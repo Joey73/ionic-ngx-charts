@@ -9,6 +9,40 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
+  public appPages = [
+    {
+      title: 'Home',
+      url: '/home',
+      icon: 'home'
+    },
+    {
+      title: 'Bar Chart',
+      url: '/bar-chart',
+      icon: 'podium'
+    },
+    {
+      title: 'Pie Chart',
+      url: '/pie-chart',
+      icon: 'pie'
+    },
+    {
+      title: 'Donut Chart',
+      url: '/donut-chart',
+      icon: 'radio-button-off'
+    },
+    {
+      title: 'Line Chart',
+      url: '/line-chart',
+      icon: 'pulse'
+    },
+    {
+      title: 'Treemap',
+      url: '/treemap',
+      icon: 'grid'
+    }
+
+  ];
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
