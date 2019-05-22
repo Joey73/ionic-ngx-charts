@@ -26,6 +26,11 @@ export class AppComponent {
       icon: 'pie'
     },
     {
+      title: 'Pie Grid Chart',
+      url: '/pie-grid-chart',
+      icon: 'radio-button-off'
+    },
+    {
       title: 'Donut Chart',
       url: '/donut-chart',
       icon: 'radio-button-off'
