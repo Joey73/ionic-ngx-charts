@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { DonutChartPage } from './donut-chart.page';
 
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
 const routes: Routes = [
   {
     path: '',
@@ -19,6 +21,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    NgxChartsModule,
     RouterModule.forChild(routes)
   ],
   declarations: [DonutChartPage]

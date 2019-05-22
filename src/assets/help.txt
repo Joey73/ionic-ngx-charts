@@ -1,1 +1,21 @@
 npm install @swimlane/ngx-charts --save
+
+npm i @angular/animations --save
+
+app.module.ts:
+--------------
+...
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+...
+add the following lines to the imports array:
+    NgxChartsModule,
+    BrowserAnimationsModule,
+
+*.module.ts:
+------------
+...
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+...
+add the following lines to the imports array:
+    NgxChartsModule,

@@ -9,5 +9,10 @@
 
 <ion-content>
   <ion-card class="chart-card">
+    <ngx-charts-tree-map
+      [scheme]="colorScheme"
+      [results]="single"
+      (select)="onSelect($event)">
+    </ngx-charts-tree-map>    
   </ion-card>
 </ion-content>
