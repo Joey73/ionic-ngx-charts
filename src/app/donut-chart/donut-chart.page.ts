@@ -13,7 +13,8 @@ export class DonutChartPage implements OnInit {
   single: any[];
   multi: any[];
 
-  view: any[] = [700, 400];
+  // view: any[] = [700, 400];
+  gradient = false;
 
   colorScheme = {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']

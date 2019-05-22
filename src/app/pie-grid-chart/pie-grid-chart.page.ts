@@ -33,7 +33,7 @@ export class PieGridChartPage implements OnInit {
   autoScale = true;
 
   constructor() {
-    Object.assign(this, {single, multi})   
+    Object.assign(this, {single, multi});
   }
 
   ngOnInit() {
