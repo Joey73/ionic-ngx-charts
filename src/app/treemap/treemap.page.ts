@@ -26,6 +26,20 @@ export class TreemapPage implements OnInit {
   ngOnInit() {
   }
 
+  ionViewWillEnter() {
+    this.drawChart();
+  }
+
+  drawChart() {
+    // this.title = 'ngx Treemap with Ionic 4';
+
+    this.colorScheme = {
+      domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    };
+
+    Object.assign(this, { single });
+  }
+
   onSelect(event) {
     console.log(event);
   }
