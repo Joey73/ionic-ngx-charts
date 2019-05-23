@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { single } from '../../assets/data/data';
+import { single } from '../../assets/data/treemapData';
+
+// https://stackblitz.com/edit/custom-colors-tree-map?file=app%2Fapp.component.ts
 
 @Component({
   selector: 'app-treemap',
