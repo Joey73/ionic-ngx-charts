@@ -18,7 +18,7 @@ export class TreemapPage implements OnInit {
   // view: any[] = [700, 400];
 
   colorScheme = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#4381D1', '#65ECE4']
   };
 
   constructor() {
@@ -36,7 +36,7 @@ export class TreemapPage implements OnInit {
     // this.title = 'ngx Treemap with Ionic 4';
 
     this.colorScheme = {
-      domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+      domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#4381D1', '#65ECE4']
     };
 
     Object.assign(this, { single });
