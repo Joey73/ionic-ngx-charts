@@ -1,5 +1,7 @@
 {
   "name": "IonicNgxCharts",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
