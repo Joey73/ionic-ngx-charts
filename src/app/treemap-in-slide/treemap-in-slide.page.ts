@@ -2,15 +2,19 @@ import { Component, OnInit } from '@angular/core';
 
 import { single } from '../../assets/data/treemapData';
 
-// https://stackblitz.com/edit/custom-colors-tree-map?file=app%2Fapp.component.ts
-
 @Component({
-  selector: 'app-treemap',
-  templateUrl: './treemap.page.html',
-  styleUrls: ['./treemap.page.scss'],
+  selector: 'app-treemap-in-slide',
+  templateUrl: './treemap-in-slide.page.html',
+  styleUrls: ['./treemap-in-slide.page.scss'],
 })
-export class TreemapPage implements OnInit {
-  title = 'ngx Treemap with Ionic 4';
+export class TreemapInSlidePage implements OnInit {
+  title = 'ngx Treemap in Slider with Ionic 4';
+
+  // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
+  slideOpts = {
+    initialSlide: 0,
+    speed: 400
+  };
 
   single: any[];
   multi: any[];

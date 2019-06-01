@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <div class="chart-wrapper" (window:resize)="onResize($event)">
+          <ngx-charts-tree-map
+            [scheme]="colorScheme"
+            [results]="single"
+            (select)="onSelect($event)">
+          </ngx-charts-tree-map>    
+        </div>
+        <!--
+        <ion-grid>
+          <ion-row>
+            <h1>Slide 1</h1>
+          </ion-row>
+          <ion-row>
+            <ion-card class="chart-card">
+              <ngx-charts-tree-map
+                [scheme]="colorScheme"
+                [results]="single"
+                (select)="onSelect($event)">
+              </ngx-charts-tree-map>    
+            </ion-card>
+          </ion-row>
+        </ion-grid>
+      -->
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 2</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides>    
+</ion-content>

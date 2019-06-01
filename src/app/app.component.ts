@@ -44,6 +44,11 @@ export class AppComponent {
       title: 'Treemap',
       url: '/treemap',
       icon: 'grid'
+    },
+    {
+      title: 'Treemap in Slide',
+      url: '/treemap-in-slide',
+      icon: 'grid'
     }
 
   ];
