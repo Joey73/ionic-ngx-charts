@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { single } from '../../assets/data/treemapData';
+import { treemapData } from '../../assets/data/treemapData';
 
 @Component({
   selector: 'app-treemap-in-slide',
@@ -16,7 +16,7 @@ export class TreemapInSlidePage implements OnInit {
     speed: 400
   };
 
-  single: any[];
+  treemapData: any[];
   multi: any[];
 
   // view: any[] = [700, 400];
@@ -26,7 +26,7 @@ export class TreemapInSlidePage implements OnInit {
   };
 
   constructor() {
-    Object.assign(this, { single });
+    Object.assign(this, { treemapData });
   }
 
   ngOnInit() {
@@ -43,7 +43,7 @@ export class TreemapInSlidePage implements OnInit {
       domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#4381D1', '#65ECE4']
     };
 
-    Object.assign(this, { single });
+    Object.assign(this, { treemapData });
   }
 
   onSelect(event) {

@@ -13,26 +13,10 @@
         <div class="chart-wrapper" (window:resize)="onResize($event)">
           <ngx-charts-tree-map
             [scheme]="colorScheme"
-            [results]="single"
+            [results]="treemapData"
             (select)="onSelect($event)">
           </ngx-charts-tree-map>    
         </div>
-        <!--
-        <ion-grid>
-          <ion-row>
-            <h1>Slide 1</h1>
-          </ion-row>
-          <ion-row>
-            <ion-card class="chart-card">
-              <ngx-charts-tree-map
-                [scheme]="colorScheme"
-                [results]="single"
-                (select)="onSelect($event)">
-              </ngx-charts-tree-map>    
-            </ion-card>
-          </ion-row>
-        </ion-grid>
-      -->
       </ion-slide>
       <ion-slide>
         <h1>Slide 2</h1>

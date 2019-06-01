@@ -8,26 +8,28 @@
 </ion-header>
 
 <ion-content>
-  <ion-card class="chart1-card">
+  <div class="chart-wrapper">
     <ngx-charts-tree-map
       [scheme]="colorScheme"
-      [results]="single"
+      [results]="treemapData"
       (select)="onSelect($event)">
     </ngx-charts-tree-map>    
-  </ion-card>
+  </div>
 
   <ion-grid>
     <ion-row>
-      <h1>TreeMap</h1>
+      <h1>TreeMap in ion-grid</h1>
     </ion-row>
     <ion-row>
-      <div class="chart-wrapper" (window:resize)="onResize($event)">
-        <ngx-charts-tree-map
-          [scheme]="colorScheme"
-          [results]="single"
-          (select)="onSelect($event)">
-        </ngx-charts-tree-map>    
-      </div>
+      <ion-col size="12">
+        <div class="chart-wrapper">
+          <ngx-charts-tree-map
+            [scheme]="colorScheme"
+            [results]="treemapData"
+            (select)="onSelect($event)">
+          </ngx-charts-tree-map>    
+        </div>
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

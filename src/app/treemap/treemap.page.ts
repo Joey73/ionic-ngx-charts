@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { single } from '../../assets/data/treemapData';
+import { treemapData } from '../../assets/data/treemapData';
 
 // https://stackblitz.com/edit/custom-colors-tree-map?file=app%2Fapp.component.ts
 
@@ -12,8 +12,7 @@ import { single } from '../../assets/data/treemapData';
 export class TreemapPage implements OnInit {
   title = 'ngx Treemap with Ionic 4';
 
-  single: any[];
-  multi: any[];
+  treemapData: any[];
 
   // view: any[] = [700, 400];
 
@@ -22,7 +21,7 @@ export class TreemapPage implements OnInit {
   };
 
   constructor() {
-    Object.assign(this, { single });
+    Object.assign(this, { treemapData });
   }
 
   ngOnInit() {
@@ -39,7 +38,7 @@ export class TreemapPage implements OnInit {
       domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#4381D1', '#65ECE4']
     };
 
-    Object.assign(this, { single });
+    Object.assign(this, { treemapData });
   }
 
   onSelect(event) {

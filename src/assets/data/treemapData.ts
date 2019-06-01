@@ -1,4 +1,4 @@
-export let single = [
+export let treemapData = [
     {name: 'Financial Services', value: 11.92},
     {name: 'Energy', value: 11.72},
     {name: 'Technology', value: 24.490000000000002},
