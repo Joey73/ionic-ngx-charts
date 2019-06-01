@@ -17,7 +17,6 @@ export class TreemapInSlidePage implements OnInit {
   };
 
   treemapData: any[];
-  multi: any[];
 
   // view: any[] = [700, 400];
 
@@ -37,7 +36,10 @@ export class TreemapInSlidePage implements OnInit {
   }
 
   drawChart() {
-    // this.title = 'ngx Treemap with Ionic 4';
+    this.slideOpts = {
+      initialSlide: 0,
+      speed: 400
+    };
 
     this.colorScheme = {
       domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#4381D1', '#65ECE4']
@@ -48,10 +50,5 @@ export class TreemapInSlidePage implements OnInit {
 
   onSelect(event) {
     console.log(event);
-  }
-
-  onResize(event) {
-    // this.view = [event.target.innerWidth - 900, 280 ];
-    this.drawChart();
   }
 }

@@ -9,14 +9,12 @@
 
 <ion-content>
     <ion-slides pager="true" [options]="slideOpts">
-      <ion-slide>
-        <div class="chart-wrapper" (window:resize)="onResize($event)">
+      <ion-slide class="chart-wrapper">
           <ngx-charts-tree-map
             [scheme]="colorScheme"
             [results]="treemapData"
             (select)="onSelect($event)">
           </ngx-charts-tree-map>    
-        </div>
       </ion-slide>
       <ion-slide>
         <h1>Slide 2</h1>
