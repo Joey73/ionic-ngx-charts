@@ -10,15 +10,10 @@ import { treemapData } from '../../assets/data/treemapData';
 export class TreemapInSlidePage implements OnInit {
   title = 'ngx Treemap in Slider with Ionic 4';
 
-  // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
   slideOpts = {
     initialSlide: 0,
     speed: 400
   };
-
-  treemapData: any[];
-
-  // view: any[] = [700, 400];
 
   colorScheme = {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#4381D1', '#65ECE4']
@@ -29,23 +24,6 @@ export class TreemapInSlidePage implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  ionViewWillEnter() {
-    this.drawChart();
-  }
-
-  drawChart() {
-    this.slideOpts = {
-      initialSlide: 0,
-      speed: 400
-    };
-
-    this.colorScheme = {
-      domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#4381D1', '#65ECE4']
-    };
-
-    Object.assign(this, { treemapData });
   }
 
   onSelect(event) {

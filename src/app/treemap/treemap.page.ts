@@ -12,8 +12,6 @@ import { treemapData } from '../../assets/data/treemapData';
 export class TreemapPage implements OnInit {
   title = 'ngx Treemap with Ionic 4';
 
-  treemapData: any[];
-
   // view: any[] = [700, 400];
 
   colorScheme = {
@@ -27,26 +25,7 @@ export class TreemapPage implements OnInit {
   ngOnInit() {
   }
 
-  ionViewWillEnter() {
-    this.drawChart();
-  }
-
-  drawChart() {
-    // this.title = 'ngx Treemap with Ionic 4';
-
-    this.colorScheme = {
-      domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#4381D1', '#65ECE4']
-    };
-
-    Object.assign(this, { treemapData });
-  }
-
   onSelect(event) {
     console.log(event);
-  }
-
-  onResize(event) {
-    // this.view = [event.target.innerWidth - 900, 280 ];
-    this.drawChart();
   }
 }
