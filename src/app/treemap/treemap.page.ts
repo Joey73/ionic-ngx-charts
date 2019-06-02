@@ -25,7 +25,7 @@ export class TreemapPage implements OnInit {
   ngOnInit() {
   }
 
-  onSelect(event) {
+  onSelect(event: Event) {
     console.log(event);
   }
 }

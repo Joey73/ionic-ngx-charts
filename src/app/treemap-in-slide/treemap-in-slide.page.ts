@@ -15,6 +15,8 @@ export class TreemapInSlidePage implements OnInit {
     speed: 400
   };
 
+  // view: any[] = [700, 400];
+
   colorScheme = {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA', '#4381D1', '#65ECE4']
   };
@@ -26,7 +28,7 @@ export class TreemapInSlidePage implements OnInit {
   ngOnInit() {
   }
 
-  onSelect(event) {
+  onSelect(event: Event) {
     console.log(event);
   }
 }
