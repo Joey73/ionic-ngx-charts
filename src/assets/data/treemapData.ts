@@ -1,8 +1,8 @@
 export let treemapData = [
-    {name: 'Financial Services', value: 11.92},
-    {name: 'Energy', value: 11.72},
-    {name: 'Technology', value: 24.490000000000002},
-    {name: 'Healthcare', value: 12.81},
-    {name: 'Consumer Defensive', value: 14.12},
-    {name: 'Consumer Cyclical', value: 24.93}
+    {name: 'Test1', value: 11.92},
+    {name: 'Test2', value: 11.72},
+    {name: 'Test3', value: 24.490000000000002},
+    {name: 'Test4', value: 12.81},
+    {name: 'Test5', value: 14.12},
+    {name: 'Test6', value: 24.93}
 ];
