@@ -10,6 +10,8 @@ import { treemapData } from '../../assets/data/treemapData';
 export class TreemapInSlidePage implements OnInit {
   title = 'ngx Treemap in Slider with Ionic 4';
 
+  treemapData: any[];
+
   slideOpts = {
     initialSlide: 0,
     speed: 400

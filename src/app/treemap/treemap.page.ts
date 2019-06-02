@@ -12,6 +12,8 @@ import { treemapData } from '../../assets/data/treemapData';
 export class TreemapPage implements OnInit {
   title = 'ngx Treemap with Ionic 4';
 
+  treemapData: any[];
+
   // view: any[] = [700, 400];
 
   colorScheme = {
