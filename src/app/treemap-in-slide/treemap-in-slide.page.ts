@@ -25,7 +25,7 @@ export class TreemapInSlidePage implements OnInit {
 
   constructor() {
     if (innerWidth > 992) {
-      this.view = [innerWidth - 290, 400];
+      this.view = [innerWidth - 300, 400];
     } else {
       this.view = [innerWidth, 400];
     }
@@ -37,7 +37,7 @@ export class TreemapInSlidePage implements OnInit {
 
   onResize(event) {
     if (event.target.innerWidth > 992) {
-      this.view = [event.target.innerWidth - 290, 400];
+      this.view = [event.target.innerWidth - 300, 400];
     } else {
       this.view = [event.target.innerWidth, 400];
     }
