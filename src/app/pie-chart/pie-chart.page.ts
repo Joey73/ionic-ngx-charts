@@ -13,7 +13,7 @@ export class PieChartPage implements OnInit {
   single: any[];
   multi: any[];
 
-  view: any[] = [700, 400];
+  // view: any[] = [700, 400];
 
   // options
   showLegend = true;
@@ -34,8 +34,28 @@ export class PieChartPage implements OnInit {
   ngOnInit() {
   }
 
+  ionViewWillEnter() {
+    this.drawChart();
+  }
+
   onSelect(event) {
     console.log(event);
+  }
+
+  drawChart() {
+    // options
+    this.showLegend = true;
+    this.gradient = false;
+    this.colorScheme = {
+      domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    };
+
+    // pie
+    this.showLabels = true;
+    this.explodeSlices = false;
+    this.doughnut = false;
+
+    Object.assign(this, { single, multi });
   }
 
 }

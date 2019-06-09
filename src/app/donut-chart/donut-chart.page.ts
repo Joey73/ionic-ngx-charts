@@ -27,6 +27,20 @@ export class DonutChartPage implements OnInit {
   ngOnInit() {
   }
 
+  ionViewWillEnter() {
+    this.drawChart();
+  }
+
+  drawChart() {
+    this.gradient = false;
+
+    this.colorScheme = {
+      domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    };
+
+    Object.assign(this, {single, multi});
+  }
+
   onSelect(event) {
     console.log(event);
   }

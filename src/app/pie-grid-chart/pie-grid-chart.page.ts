@@ -39,6 +39,31 @@ export class PieGridChartPage implements OnInit {
   ngOnInit() {
   }
 
+  ionViewWillEnter() {
+    this.drawChart();
+  }
+
+  drawChart() {
+    // options
+    this.showXAxis = true;
+    this.showYAxis = true;
+    this.gradient = false;
+    this.showLegend = true;
+    this.showXAxisLabel = true;
+    this.xAxisLabel = 'Country';
+    this.showYAxisLabel = true;
+    this.yAxisLabel = 'Population';
+
+    this.colorScheme = {
+      domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    };
+
+    // line, area
+    this.autoScale = true;
+
+    Object.assign(this, {single, multi});
+  }
+
   onSelect(event) {
     console.log(event);
   }
